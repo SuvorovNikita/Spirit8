@@ -1,0 +1,85 @@
+.section-team {
+    background-color: $color-body;
+    padding: 6.2rem 0;
+    @include media-breakpoint-down(xs) {
+        padding: 1.5rem 0;
+    }
+
+    .title {
+        position: relative;
+        color: $bg-color;
+        font-family: "Open Sans - Semibold";
+        font-size: 2.75rem;
+        font-weight: 600;
+        line-height: 1.5rem;
+        text-transform: uppercase;
+        text-align: center;
+        span {
+            font-weight: 300;
+            color: $color-gray;
+        }
+         :after {
+            display: block;
+            left: 45%;
+            bottom: -30px;
+            position: absolute;
+            content: '';
+            width: 99px;
+            height: 5px;
+            background-color: $color-primary;
+            @include media-breakpoint-down(xs) {
+                left: 33%;
+             }
+        }
+         :before {
+            display: block;
+            left: 46%;
+            bottom: -44px;
+            position: absolute;
+            content: '';
+            width: 75px;
+            height: 5px;
+            background-color: $color-primary;
+            @include media-breakpoint-down(xs) {
+               left: 38%;
+            }
+        }
+        @include media-breakpoint-down(xs) {
+            font-size: 1.5rem;
+        }
+    }
+    .team-item {
+        margin-top: 8.8rem;
+        text-align: center;
+        @include media-breakpoint-down(xs) {
+            margin-top: 7.8rem;
+        }
+    }
+    .photo {
+        border-radius: 50%;
+    }
+    .name {
+        margin-top: 1.3rem;
+        color: $bg-color;
+        font-family: $p-font-family;
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 1.5rem;
+    }
+    .prof {
+        margin-top: 0.6rem;
+        font-size: 1rem;
+        color: $bg-color;
+        font-family: $p-font-family;
+        font-weight: 400;
+        line-height: 1.5rem;
+    }
+    .text {
+        margin-top: 2.1rem;
+        color: $bg-color;
+        font-family: $p-font-family;
+        font-size: 0.87rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+    }
+}

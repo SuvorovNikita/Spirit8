@@ -1,0 +1,86 @@
+.c-header {
+    background: $color-body;
+    padding-top: 3.5rem;
+    position: relative;
+    @include media-breakpoint-down(xs) {
+        padding-top: 1.5rem;
+    }
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .burger-menu {
+        display: none;
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 0;
+        @include media-breakpoint-down(xs) {
+            display: block;
+        }
+    }
+}
+
+.header-logo {
+    color: $bg-color;
+    font-family: $g-font-family-logo;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+}
+
+.header-nav {
+    display: flex;
+    flex-wrap: wrap;
+    @include media-breakpoint-down(xs) {
+        display: none;
+        position: absolute;
+        top: 130%;
+    }
+    &.show {
+        display: block;
+    }
+}
+
+.nav-link {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-right: 1.75rem;
+    color: $bg-color;
+    font-family: $g-font-family-logo;
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    transition: color .2s linear;
+    &:last-child {
+        margin-right: 0;
+    }
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 0;
+        height: 3px;
+        background: $color-primary;
+        z-index: 1;
+        transition: width .2s linear;
+    }
+    &:hover {
+        @include media-breakpoint-down(xs) {
+            color: $color-primary;
+        }
+    }
+    &:hover:after {
+        width: 100%;
+        @include media-breakpoint-down(xs) {
+            width: 0;
+        }
+    }
+}

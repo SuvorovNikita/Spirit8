@@ -1,0 +1,11 @@
+.h-m {
+  &b-d {
+    margin-bottom: $g-value-padding * 2;
+  }
+}
+
+.-h-m {
+  &b-d {
+    margin-bottom: -$g-value-padding * 2;
+  }
+}

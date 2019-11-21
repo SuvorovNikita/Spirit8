@@ -1,0 +1,43 @@
+@mixin h-general-transition($properties...) {
+  @if length($properties) == 0 {
+    $properties: all;
+  }
+
+  @include media-breakpoint-up(md) {
+    transition-property: $properties;
+    transition-duration: $g-value-animation-duration;
+    transition-timing-function: $g-value-animation-function;
+  }
+}
+
+@mixin h-scrolled {
+  overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
+}
+
+@mixin h-transition-performance {
+  will-change: transform;
+}
+
+@mixin h-hide-scroll {
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+
+  &::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    background: transparent !important;
+  }
+}
+
+@mixin h-ellipsis-text {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.is-disabled {
+  pointer-events: none !important;
+}

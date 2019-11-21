@@ -1,0 +1,119 @@
+.section-testimonials {
+    background-color: $color-body;
+    padding: 5.2rem 0;
+
+    @include media-breakpoint-down(xs) {
+        padding: 1.5rem 0;
+    }
+
+    .slider-bg {
+        padding: 1rem 0;
+        overflow: hidden;
+    }
+
+    .title {
+        position: relative;
+        color: $bg-color;
+        font-family: "Open Sans - Semibold";
+        font-size: 2.75rem;
+        font-weight: 600;
+        line-height: 1.5rem;
+        text-transform: uppercase;
+        text-align: center;
+
+        span {
+            font-weight: 300;
+            color: $color-gray;
+        }
+
+        :after {
+            display: block;
+            left: 45%;
+            bottom: -30px;
+            position: absolute;
+            content: '';
+            width: 99px;
+            height: 5px;
+            background-color: $color-primary;
+
+            @include media-breakpoint-down(xs) {
+                left: 33%;
+            }
+        }
+
+        :before {
+            display: block;
+            left: 46%;
+            bottom: -44px;
+            position: absolute;
+            content: '';
+            width: 75px;
+            height: 5px;
+            background-color: $color-primary;
+
+            @include media-breakpoint-down(xs) {
+                left: 38%;
+            }          
+        }
+        @include media-breakpoint-down(xs) {
+            font-size: 1.5rem;
+        }
+    }
+
+    .text {
+        text-align: center;
+        margin-top: 9.5rem;
+        color: #e7e7e7;
+        font-family: "Open Sans - Semibold";
+        font-size: 1.12rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+        text-transform: uppercase;
+        @include media-breakpoint-down(xs) {
+            margin-top: 5.6rem;
+        }
+    }
+
+    .name {
+        text-align: center;
+        margin-top: 3rem;
+        color: #b2b2b2;
+        font-family: "Open Sans";
+        font-size: 1.125rem;
+        font-weight: 300;
+        line-height: 1.5rem;
+
+        span {
+            font-family: "Open Sans Light";
+            font-weight: 300;
+        }
+    }
+
+    .slick-dots {
+        bottom: -57px;
+        position: absolute;
+        @include media-breakpoint-down(xs) {
+            bottom: -37px;
+        }
+    }
+
+    .slick-active button {
+        width: 9px;
+        height: 9px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        border: none;
+        background-color: $color-primary;
+    }
+
+    li button {
+        width: 9px;
+        height: 9px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        border: none;
+        background-color: $bg-color;
+    }
+}

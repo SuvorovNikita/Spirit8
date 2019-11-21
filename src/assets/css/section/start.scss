@@ -1,0 +1,62 @@
+.start {
+    padding-top: 12.5rem;
+    padding-bottom: 5.5rem;
+    background-color: $color-body;
+    @include media-breakpoint-down(xs) {
+        padding-top: 10.5rem;
+        padding-bottom: 1.5rem;
+    }
+}
+
+.start-title {
+    text-align: center;
+    color: $alt-color;
+    font-family: $p-font-family;
+    font-size: 2.75rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    .title {
+        color: $color-primary;
+        font-weight: 700;
+    }
+    @include media-breakpoint-down(xs) {
+        padding-top: .75rem;
+        line-height: 2.5rem;
+        font-size: 1.75rem;
+    }
+}
+
+.start-subtitle {
+    color: $alt-color;
+    margin-top: 1.2rem;
+    text-align: center;
+    font-family: $p-font-family;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    .text {
+        color: $bg-color;
+        font-weight: 700;
+    }
+    @include media-breakpoint-down(xs) {
+        font-size: 0.8rem;
+    }
+}
+
+.start-button {
+    text-align: center;
+    margin-top: 17.5rem;
+    @include media-breakpoint-down(xs) {
+        margin-top: 7.5rem;
+    }
+}
+
+i {
+    color: $alt-color;
+    border: none;
+    transition: color .2s linear;
+    &:hover {
+        color: $color-primary;
+    }
+}

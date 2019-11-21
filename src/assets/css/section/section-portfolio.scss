@@ -1,0 +1,159 @@
+.section-portfolio {
+    padding: 6.2rem 0;
+    @include media-breakpoint-down(xs) {
+        padding: 1.5rem 0;
+    }
+    .title {
+        position: relative;
+        color: $color-body;
+        font-family: "Open Sans - Semibold";
+        font-size: 2.75rem;
+        font-weight: 600;
+        line-height: 1.5rem;
+        text-transform: uppercase;
+        text-align: center;
+        span {
+            font-weight: 300;
+            color: $color-body-alt;
+        }
+         :after {
+            display: block;
+            left: 45%;
+            bottom: -30px;
+            position: absolute;
+            content: '';
+            width: 99px;
+            height: 5px;
+            background-color: $color-primary;
+            @include media-breakpoint-down(xs) {
+                left: 33%;
+            }
+        }
+         :before {
+            display: block;
+            left: 46%;
+            bottom: -44px;
+            position: absolute;
+            content: '';
+            width: 75px;
+            height: 5px;
+            background-color: $color-primary;
+            @include media-breakpoint-down(xs) {
+                left: 38%;
+            }
+          
+        }
+
+        @include media-breakpoint-down(xs) {
+            font-size: 1.5rem;
+        }
+    }
+    .subtitle {
+        text-align: center;
+        margin-top: 5.6rem;
+        color: $gray-alt;
+        font-family: $g-font-family-logo;
+        font-size: 1rem;
+        font-style: italic;
+        line-height: 1.5rem;
+    }
+    .filter {
+        margin-bottom: 2.8rem;
+        margin-top: 7.25rem;
+        display: flex;
+        justify-content: space-between;
+        @include media-breakpoint-down(xs) {
+            margin-top: 2.8rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    .filter-name {
+        color: $color-body-alt;
+        font-family: "Open Sans - Semibold";
+        font-size: 1.1rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+        text-transform: uppercase;
+        @include media-breakpoint-down(xs) {
+         margin-bottom: 10px;
+        }
+       
+    }
+    .filter-nav-link {
+        color: $gray-alt;
+        font-family: $p-font-family;
+        font-size: 1.12rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+        border-right: 1px solid $gray-alt;
+        padding: 0 0.45rem;
+        transition: color .2s linear;
+        &:last-child {
+            border-right: none;
+            padding-right: 0;
+        }
+        &:hover {
+            color: $color-body-alt;
+        }
+        @include media-breakpoint-down(xs) {
+            font-size: .7rem;
+        }
+    }
+    .filter-item {
+        margin-bottom: 1.87rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+    }
+    .filter-content {
+        max-width: 100%;
+        cursor: pointer;
+        position: absolute;       
+        background-color: $color-body-alt;
+        width: 270px;
+        height: 270px;
+        opacity: 0;
+        transition: opacity .2s linear;
+        &:hover {
+            opacity: 1;
+        }
+       
+    }
+    .filter-title {
+        margin-top: 4.1rem;
+        text-align: center;
+        color: $bg-color;
+        font-family: "Open Sans - Semibold";
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+        text-transform: uppercase;
+    }
+    .filter-text {
+        text-align: center;
+        color: #b2b2b2;
+        font-size: 0.875rem;
+    }
+    .filter-btn {
+        margin-top: 1.75rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn-1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border: 1px solid $color-primary;
+        color: $color-primary;
+        border-radius: 50%;
+    }
+    .hide {
+        display: none;
+    }
+}

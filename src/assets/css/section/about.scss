@@ -1,0 +1,92 @@
+.about {
+    margin: 6.2rem 0;
+    @include media-breakpoint-down(xs) {
+        margin: 1.5rem 0;
+    }
+}
+
+.about-inner-left {
+    position: relative;
+}
+
+.mac {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.about-inner-subtitle {
+    color: $color-gray;
+    font-family: "Open Sans";
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 2rem;
+    text-transform: uppercase;
+    @include media-breakpoint-down(xs) {
+        margin-top: 15rem ;
+    }
+}
+
+.about-inner-title {
+    position: relative;
+    margin-top: 1.2rem;
+    color: $color-body-alt;
+    font-family: "Open Sans";
+    font-size: 2.1rem;
+    font-weight: 400;
+    line-height: 2rem;
+    text-transform: uppercase;
+    .title {
+        font-weight: 700;
+    }
+    &:after {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 99px;
+        height: 5px;
+        background-color: $color-primary;
+        bottom: -20px;
+        left: 0;
+    }
+    @include media-breakpoint-down(xs) {
+        margin-top: 1rem ;
+    }
+}
+
+.about-inner-text {
+    margin-top: 3.5rem;
+    margin-bottom: 2.8rem;
+    width: 400px;
+    color: $gray-alt;
+    font-family: "Open Sans";
+    font-size: 1.12rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    @include media-breakpoint-down(xs) {
+        text-align: left;
+        width: 220px;
+        margin-top: 2.5rem ;
+        margin-bottom: 2.5rem ;
+    }
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1.5rem;
+    list-style: none;
+    list-style-image: url("/assets/img/marker.png");
+    padding-left: 1.27rem;
+    li {
+        color: #5a5a5a;
+        font-family: $p-font-family;
+        font-size: 1rem;
+        font-style: italic;
+        line-height: 1.5rem;
+    }
+}
+
+.btn {
+    padding-right: 10px;
+}

@@ -1,0 +1,119 @@
+.section-clients {
+    background-color: $color-body;
+    padding: 6.2rem 0;
+
+    @include media-breakpoint-down(xs) {
+        padding: 1.5rem 0;
+    }
+
+    .title {
+        position: relative;
+        color: $bg-color;
+        font-family: "Open Sans - Semibold";
+        font-size: 2.75rem;
+        font-weight: 600;
+        line-height: 1.5rem;
+        text-transform: uppercase;
+        text-align: center;
+
+        span {
+            font-weight: 300;
+            color: $color-gray;
+        }
+
+        :after {
+            display: block;
+            left: 45%;
+            bottom: -30px;
+            position: absolute;
+            content: '';
+            width: 99px;
+            height: 5px;
+            background-color: $color-primary;
+
+            @include media-breakpoint-down(xs) {
+                left: 33%;
+            }
+        }
+
+        :before {
+            display: block;
+            left: 46%;
+            bottom: -44px;
+            position: absolute;
+            content: '';
+            width: 75px;
+            height: 5px;
+            background-color: $color-primary;
+
+            @include media-breakpoint-down(xs) {
+                left: 38%;
+            }
+        }
+
+        @include media-breakpoint-down(xs) {
+            font-size: 1.5rem;
+        }
+    }
+
+    .clients-name {
+        display: flex;
+        margin-top: 7.1rem;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+
+        @include media-breakpoint-down(xs) {
+            display: block;
+            align-items: center;
+            margin-top: 5.6rem;
+
+        }
+    }
+
+    .logo-col {
+        width: 20%;
+        text-align: center;
+        padding: 1rem;
+        margin: 1rem;
+
+        @include media-breakpoint-down(xs) {
+            width: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+
+
+    .slick-dots {
+        bottom: -57px;
+        position: absolute;
+
+        @include media-breakpoint-down(xs) {
+            bottom: -37px;
+        }
+    }
+
+    .slick-active button {
+        width: 9px;
+        height: 9px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        border: none;
+        background-color: $color-primary;
+    }
+
+    li button {
+        width: 9px;
+        height: 9px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        border: none;
+        background-color: $bg-color;
+    }
+
+}

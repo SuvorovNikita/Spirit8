@@ -1,0 +1,111 @@
+.section-services {
+    padding: 6.2rem 0;
+
+    @include media-breakpoint-down(xs) {
+        padding: 1.5rem 0;
+    }
+
+    .title {
+        position: relative;
+        color: $color-body;
+        font-family: "Open Sans - Semibold";
+        font-size: 2.75rem;
+        font-weight: 600;
+        line-height: 1.5rem;
+        text-transform: uppercase;
+        text-align: center;
+
+        span {
+            font-weight: 300;
+            color: $color-body-alt;
+        }
+
+        :after {
+            display: block;
+            left: 45%;
+            bottom: -30px;
+            position: absolute;
+            content: '';
+            width: 99px;
+            height: 5px;
+            background-color: $color-primary;
+
+            @include media-breakpoint-down(xs) {
+                left: 33%;
+            }
+        }
+
+        :before {
+            display: block;
+            left: 46%;
+            bottom: -44px;
+            position: absolute;
+            content: '';
+            width: 75px;
+            height: 5px;
+            background-color: $color-primary;
+
+            @include media-breakpoint-down(xs) {
+                left: 38%;
+            }
+        }
+
+        @include media-breakpoint-down(xs) {
+            font-size: 1.5rem;
+        }
+    }
+
+    .subtitle {
+        text-align: center;
+        margin-top: 5.6rem;
+        color: $gray-alt;
+        font-family: $g-font-family-logo;
+        font-size: 1rem;
+        font-style: italic;
+        line-height: 1.5rem;
+    }
+
+    .inner-item {
+        text-align: center;
+        margin-top: 6.6rem;
+        @include media-breakpoint-down(xs) {
+            margin-top: 3.6rem;
+        }
+    }
+
+    .item-spec {
+        display: inline-block;
+        width: 128px;
+        height: 128px;
+        border-radius: 50%;
+        border: 5px solid $color-primary;
+    }
+
+    .img-spec {
+        margin: 37px auto;
+    }
+
+    .prof {
+        text-align: center;
+        margin-top: 1.8rem;
+        color: $color-body-alt;
+        font-family: "Open Sans - Semibold";
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+        text-transform: uppercase;
+        @include media-breakpoint-down(xs) {
+            font-size: 1rem;
+        }
+    }
+
+    .text {
+        margin-top: 1.2rem;
+        text-align: center;
+        color: $color-body-alt;
+        font-family: $p-font-family;
+        font-size: 0.8rem;
+        font-weight: 400;
+        line-height: 1rem;
+    }
+}
