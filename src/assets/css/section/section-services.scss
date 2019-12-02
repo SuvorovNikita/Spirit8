@@ -31,7 +31,7 @@
             background-color: $color-primary;
 
             @include media-breakpoint-down(xs) {
-                left: 33%;
+                display: none;
             }
         }
 
@@ -46,7 +46,7 @@
             background-color: $color-primary;
 
             @include media-breakpoint-down(xs) {
-                left: 38%;
+                display: none;
             }
         }
 

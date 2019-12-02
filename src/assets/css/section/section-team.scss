@@ -28,7 +28,7 @@
             height: 5px;
             background-color: $color-primary;
             @include media-breakpoint-down(xs) {
-                left: 33%;
+                display: none;
              }
         }
          :before {
@@ -41,7 +41,7 @@
             height: 5px;
             background-color: $color-primary;
             @include media-breakpoint-down(xs) {
-               left: 38%;
+                display: none;
             }
         }
         @include media-breakpoint-down(xs) {

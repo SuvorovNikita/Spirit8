@@ -5,35 +5,30 @@
 //@@include('global/_global.js')
 //@@include('components/_components.js')
 
+$(function () {
 
-$(function() {
-
+    
     var navToggle = $("#navToggle");
     var nav = $("#nav");
 
-    navToggle.on("click", function(event) {
+    navToggle.on("click", function (event) {
         event.preventDefault();
         nav.toggleClass("show");
     });
 
-});
 
-
-$(function() {
 
     $(".slider").slick({
         arrows: false,
         dots: true
     });
 
-});
 
 
-$(function() {
 
     var filter = $("[data-filter]");
 
-    filter.on("click", function(event) {
+    filter.on("click", function (event) {
 
         event.preventDefault();
 
@@ -42,7 +37,7 @@ $(function() {
         if (cat == 'all') {
             $("[data-cat]").removeClass("hide");
         } else {
-            $("[data-cat]").each(function() {
+            $("[data-cat]").each(function () {
                 var workCat = $(this).data('cat');
 
                 if (workCat != cat) {
@@ -53,6 +48,15 @@ $(function() {
             });
         }
 
+    });
+
+
+    var $page = $('html, body');
+    $('a[href*="#"]').click(function() {
+        $page.animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 800);
+        return false;
     });
 
 });
